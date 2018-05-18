@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import NavBar from './components/navbar/NavBar';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <NavBar />
+      <MuiThemeProvider>
+        <div>
+          <NavBar />
+        </div>
+      </MuiThemeProvider>
     )
   }
 }
